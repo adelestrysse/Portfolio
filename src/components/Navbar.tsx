@@ -23,8 +23,8 @@ export const Navbar = () => {
     return (
         <div className={`fixed top-0 left-0 w-full z-50 transition-colors duration-300 px-5 py-6 ${
                         isScrolled
-                          ? "bg-white/60 backdrop-blur-md dark:bg-gray-900/80"
-                          : "bg-white/0 dark:bg-gray-900/0"
+                          ? "bg-white/20 backdrop-blur-md dark:bg-gray-900/80"
+                          : "bg-white/100 dark:bg-gray-900/0"
                       } shadow-md`}>
           <div className="flex items-center justify-between">
             {/* Logo */}
@@ -69,7 +69,9 @@ export const Navbar = () => {
                 className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white border-0 hover:scale-105 transition-all duration-300 shadow-sm"
                 style={{ background: "linear-gradient(to right, rgb(147 51 234), rgb(219 39 119))" }}
               >
-                <span className="text-white font-medium">Resume</span>
+                <a href="/CV.pdf" target="_blank" rel="noopener noreferrer" className="text-white font-medium">
+                  Resume
+                </a>
               </Button>
               {/* Theme Toggle */}
             <ThemeToggle />
@@ -111,7 +113,9 @@ export const Navbar = () => {
                   className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white border-0 w-fit shadow-sm"
                   style={{ background: "linear-gradient(to right, rgb(147 51 234), rgb(219 39 119))" }}
                 >
-                  <span className="text-white font-medium">Resume</span>
+                <a href="/CV.pdf" target="_blank" rel="noopener noreferrer" className="text-white font-medium">
+                  Resume
+                </a>
                 </Button>
               </div>
             </div>

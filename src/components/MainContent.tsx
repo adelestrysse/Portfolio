@@ -7,14 +7,14 @@ import { Projects } from "./Projects"
 
 export function MainContent() {
   return (
-    <div className="max-w-6xl mx-auto bg-background">
-      {/* Creative Header */}
+    <div className="max-w-6xl mx-auto bg-background mt-25">
+      {/* Header */}
       <div className="relative overflow-hidden rounded-t-lg mb-10">
-        <div className="absolute inset-0 bg-gradient-to-br from-purple-500/20 via-pink-500/15 to-orange-500/10 animate-pulse"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-emerald-500/20 via-pink-500/15 to-indigo-400/10 animate-pulse"></div>
         <div className="relative p-8 text-center">
-          <Avatar className="w-28 h-28 mx-auto mb-6 ring-4 ring-purple-500/30 hover:ring-pink-500/50 transition-all duration-300 hover:scale-105">
-            <AvatarImage src="/creative-designer-portrait.png" alt="Profile" />
-            <AvatarFallback className="text-xl bg-gradient-to-br from-purple-500 to-pink-500 text-white">
+          <Avatar className="w-50 h-50 mx-auto mb-6 ring-4 ring-purple-500/30 hover:ring-pink-500/50 transition-all duration-300 hover:scale-105">
+            <AvatarImage src="/profile_picture.jpg" alt="Profile" className="object-contain"/>
+            <AvatarFallback className="text-xl bg-gradient-to-br from-emerald-500 to-indigo-400 text-white">
               AS
             </AvatarFallback>
           </Avatar>
@@ -31,14 +31,18 @@ export function MainContent() {
               size="sm"
               className="gap-2 bg-transparent hover:bg-gradient-to-r hover:from-purple-500 hover:to-pink-500 hover:text-white transition-all duration-300"
             >
-              LinkedIn
+              <a href="https://www.linkedin.com/in/adele-strysse/" target="_blank" rel="noopener noreferrer">
+                LinkedIn
+              </a>
             </Button>
             <Button
               variant="outline"
               size="sm"
               className="gap-2 bg-transparent hover:bg-gradient-to-r hover:from-pink-500 hover:to-orange-500 hover:text-white transition-all duration-300"
             >
-              GitHub
+              <a href="https://github.com/adelestrysse" target="_blank" rel="noopener noreferrer">
+                GitHub
+              </a>
             </Button>
           </div>
           <div className="flex flex-wrap justify-center gap-6 text-sm text-muted-foreground">
@@ -56,7 +60,7 @@ export function MainContent() {
 
       <div>
         {/* About */}
-        <div className="lg:col-span-2 space-y-6 mx-5">
+        <div id="about" className="my-20 mx-5 mb-10 scroll-mt-24">
         <Card className="hover:shadow-lg transition-shadow duration-300">
             <CardHeader>
             <CardTitle className="flex items-center gap-2">
@@ -67,48 +71,79 @@ export function MainContent() {
             <p className="text-muted-foreground leading-relaxed text-pretty">
                 I started my studies in Computer Science after being inspired to continue my technological
                 journey from VGS. 
+                <br />
+                
             </p>
             </CardContent>
         </Card>
         </div>
 
-      <div className="p-6 space-y-8">
+        {/* Work */}
+        <div id="work" className="mt-20 mx-5 scroll-mt-24">
+        <Card className="hover:shadow-lg transition-shadow duration-300">
+            <CardHeader>
+            <CardTitle className="flex items-center gap-2">
+                Relevant Work Experience
+            </CardTitle>
+            </CardHeader>
+            <CardContent>
+            <p className="text-muted-foreground leading-relaxed text-pretty">
+                I started my studies in Computer Science after being inspired to continue my technological
+                journey from VGS. 
+                <br />
+                
+            </p>
+            </CardContent>
+        </Card>
+        </div>
+
+      <div id="projects" className="mt-20 p-6 space-y-8 scroll-mt-24">
         {/* Projects*/}
         <Projects />
 
-          {/* Skills & Tools */}
-          <div className="space-y-6">
-            <Card className="hover:shadow-lg transition-shadow duration-300">
-              <CardHeader>
-                <CardTitle className="flex items-center gap-2">
-                  <span className="text-2xl">⚡</span>
-                  Skills & Tools
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <div className="space-y-4">
-                  <div>
-                    <h4 className="font-medium mb-2">Design</h4>
-                    <div className="flex flex-wrap gap-1">
-                      <Badge variant="secondary">Adobe Creative Suite</Badge>
-                      <Badge variant="secondary">Figma</Badge>
-                      <Badge variant="secondary">Sketch</Badge>
-                      <Badge variant="secondary">Principle</Badge>
-                    </div>
-                  </div>
-                  <div>
-                    <h4 className="font-medium mb-2">Specialties</h4>
-                    <div className="flex flex-wrap gap-1">
-                      <Badge variant="secondary">Brand Identity</Badge>
-                      <Badge variant="secondary">UI/UX Design</Badge>
-                      <Badge variant="secondary">Typography</Badge>
-                      <Badge variant="secondary">Illustration</Badge>
-                    </div>
+        {/* Skills & Tools */}
+        <div id="skills" className="space-y-6">
+          <Card className="hover:shadow-lg transition-shadow duration-300">
+            <CardHeader>
+              <CardTitle className="flex items-center gap-2">
+                <span className="text-2xl">⚡</span>
+                Skills & Tools
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <div className="space-y-4">
+                <div>
+                  <h4 className="font-medium mb-2">Tools and platforms</h4>
+                  <div className="flex flex-wrap gap-1 mb-10">
+                    <Badge variant="secondary">Visual Studio Code</Badge>
+                    <Badge variant="secondary">Figma</Badge>
+                    <Badge variant="secondary">Git</Badge>
+                    <Badge variant="secondary">GitHub</Badge>
+                    <Badge variant="secondary">Firebase</Badge>
                   </div>
                 </div>
-              </CardContent>
-            </Card>
-          </div>
+                <div>
+                  <h4 className="font-medium mb-2">Framework and libraries</h4>
+                  <div className="flex flex-wrap gap-1 mb-10">
+                    <Badge variant="secondary">React</Badge>
+                    <Badge variant="secondary">Vite</Badge>
+                    <Badge variant="secondary">Tailwind</Badge>
+                  </div>
+                </div>
+                <div>
+                  <h4 className="font-medium mb-2">Language</h4>
+                  <div className="flex flex-wrap gap-1">
+                    <Badge variant="secondary">Java</Badge>
+                    <Badge variant="secondary">HTML</Badge>
+                    <Badge variant="secondary">CSS</Badge>
+                    <Badge variant="secondary">TypeScript</Badge>
+                    <Badge variant="secondary">Python</Badge>
+                  </div>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+        </div>
         </div>
       </div>
     </div>

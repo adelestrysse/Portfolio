@@ -12,22 +12,15 @@ export const Navbar = () => {
             {/* Logo */}
             <div className="flex items-center gap-3">
               <div className="w-8 h-8 rounded-full bg-gradient-to-br from-purple-600 to-pink-600 flex items-center justify-center shadow-sm">
-                <span className="text-white font-bold text-sm drop-shadow-sm">AL</span>
+                <span className="text-white font-bold text-sm drop-shadow-sm">AS</span>
               </div>
               <span className="font-bold text-lg bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
-                Adele Strysse
+                Adele Xiao Yuan Strysse
               </span>
             </div>
 
             {/* Desktop Navigation */}
             <div className="hidden md:flex items-center gap-8">
-              <a
-                href="#work"
-                className="text-sm font-medium text-gray-700 hover:text-purple-600 transition-colors relative group"
-              >
-                Work
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-purple-500 to-pink-500 group-hover:w-full transition-all duration-300"></span>
-              </a>
               <a
                 href="#about"
                 className="text-sm font-medium text-gray-700 hover:text-purple-600 transition-colors relative group"
@@ -36,17 +29,24 @@ export const Navbar = () => {
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-purple-500 to-pink-500 group-hover:w-full transition-all duration-300"></span>
               </a>
               <a
-                href="#services"
+                href="#work"
                 className="text-sm font-medium text-gray-700 hover:text-purple-600 transition-colors relative group"
               >
-                Services
+                Work
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-purple-500 to-pink-500 group-hover:w-full transition-all duration-300"></span>
               </a>
               <a
-                href="#contact"
+                href="#projects"
                 className="text-sm font-medium text-gray-700 hover:text-purple-600 transition-colors relative group"
               >
-                Contact
+                Projects
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-purple-500 to-pink-500 group-hover:w-full transition-all duration-300"></span>
+              </a>
+              <a
+                href="#skills"
+                className="text-sm font-medium text-gray-700 hover:text-purple-600 transition-colors relative group"
+              >
+                Skills
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-purple-500 to-pink-500 group-hover:w-full transition-all duration-300"></span>
               </a>
               <Button
@@ -73,23 +73,23 @@ export const Navbar = () => {
           {isMenuOpen && (
             <div className="md:hidden mt-4 pb-4 border-t border-purple-100">
               <div className="flex flex-col gap-4 pt-4">
-                <a href="#work" className="text-sm font-medium text-gray-700 hover:text-purple-600 transition-colors">
-                  Work
-                </a>
                 <a href="#about" className="text-sm font-medium text-gray-700 hover:text-purple-600 transition-colors">
                   About
                 </a>
-                <a
-                  href="#services"
-                  className="text-sm font-medium text-gray-700 hover:text-purple-600 transition-colors"
-                >
-                  Services
+                <a href="#work" className="text-sm font-medium text-gray-700 hover:text-purple-600 transition-colors">
+                  Work
                 </a>
                 <a
-                  href="#contact"
+                  href="#projects"
                   className="text-sm font-medium text-gray-700 hover:text-purple-600 transition-colors"
                 >
-                  Contact
+                  Projects
+                </a>
+                <a
+                  href="#skills"
+                  className="text-sm font-medium text-gray-700 hover:text-purple-600 transition-colors"
+                >
+                  Skills
                 </a>
                 <Button
                   size="sm"

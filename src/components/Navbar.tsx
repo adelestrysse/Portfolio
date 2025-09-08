@@ -1,13 +1,31 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { Button } from "./ui/button"
 import { X, Menu } from "lucide-react"
 import { ThemeToggle } from "./ThemeToggle"
 
 export const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false)
+    const [isScrolled, setIsScrolled] = useState(false);
+
+    useEffect(() => {
+      const handleScroll = () => {
+        if (window.scrollY > 50) {
+          setIsScrolled(true);
+        } else {
+          setIsScrolled(false);
+        }
+      };
+
+      window.addEventListener("scroll", handleScroll);
+      return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
 
     return (
-        <div className="px-6 py-4">
+        <div className={`fixed top-0 left-0 w-full z-50 transition-colors duration-300 px-5 py-6 ${
+                        isScrolled
+                          ? "bg-white/60 backdrop-blur-md dark:bg-gray-900/80"
+                          : "bg-white/0 dark:bg-gray-900/0"
+                      } shadow-md`}>
           <div className="flex items-center justify-between">
             {/* Logo */}
             <div className="flex items-center gap-3">
@@ -21,10 +39,7 @@ export const Navbar = () => {
 
             {/* Desktop Navigation */}
             <div className="hidden md:flex items-center gap-8">
-              <a
-                href="#about"
-                className="text-sm font-medium text-gray-700 hover:text-purple-600 transition-colors relative group"
-              >
+              <a href="#about" className="text-sm font-medium text-gray-700 hover:text-purple-600 transition-colors relative group">
                 About
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-purple-500 to-pink-500 group-hover:w-full transition-all duration-300"></span>
               </a>

@@ -4,9 +4,6 @@ import { MainContent } from "../components/MainContent";
 export const Home = () => {
     return (
         <div className="min-h-screen bg-background ">
-
-            {/* Background Effects */}
-
             {/* Navbar */}
             <Navbar />
 

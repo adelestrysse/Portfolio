@@ -1,18 +1,14 @@
-import { Eye, Zap } from "lucide-react"
 import { Card, CardContent } from "./ui/card"
-import { Button } from "./ui/button"
 import { Badge } from "./ui/badge"
 
 export const Projects = () => {
     return (
         <div>
             <section>
-                <h2 className="text-2xl font-bold mb-6 text-center flex items-center justify-center gap-2">
-                    <Zap className="w-6 h-6 text-yellow-500" />
+                <h2 className="text-3xl font-bold mb-6 text-center flex items-center justify-center gap-2 leading-tight">
                     <span className="bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
                     Projects
                     </span>
-                    <Zap className="w-6 h-6 text-yellow-500" />
                 </h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                     <Card className="group overflow-hidden hover:shadow-xl hover:shadow-purple-500/20 transition-all duration-300 hover:-translate-y-2">
@@ -20,14 +16,8 @@ export const Projects = () => {
                         <img
                         src="/modern-brand-identity.png"
                         alt="Portfolio"
-                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                        className="w-full h-full object-contain group-hover:scale-110 transition-transform duration-500"
                         />
-                        <div className="absolute inset-0 bg-gradient-to-t from-purple-600/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                        <Button variant="secondary" size="sm" className="gap-2 bg-white/90 hover:bg-white">
-                            <Eye className="w-4 h-4" />
-                            View Project
-                        </Button>
-                        </div>
                     </div>
                     <CardContent className="p-4">
                         <h3 className="font-semibold mb-2 group-hover:text-purple-600 transition-colors">
@@ -52,16 +42,10 @@ export const Projects = () => {
                     <Card className="group overflow-hidden hover:shadow-xl hover:shadow-pink-500/20 transition-all duration-300 hover:-translate-y-2">
                     <div className="relative aspect-[4/3] overflow-hidden">
                         <img
-                        src="/mobile-app-ui-design.png"
+                        src="/projects/appevent.png"
                         alt="AppEvent"
-                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                        className="w-full h-full object-contain group-hover:scale-110 transition-transform duration-500"
                         />
-                        <div className="absolute inset-0 bg-gradient-to-t from-pink-600/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                        <Button variant="secondary" size="sm" className="gap-2 bg-white/90 hover:bg-white">
-                            <Eye className="w-4 h-4" />
-                            View Project
-                        </Button>
-                        </div>
                     </div>
                     <CardContent className="p-4">
                         <h3 className="font-semibold mb-2 group-hover:text-pink-600 transition-colors">
@@ -84,16 +68,10 @@ export const Projects = () => {
                     <Card className="group overflow-hidden hover:shadow-xl hover:shadow-orange-500/20 transition-all duration-300 hover:-translate-y-2">
                     <div className="relative aspect-[4/3] overflow-hidden">
                         <img
-                        src="/packaging-design-collection.png"
+                        src="/projects/onlinefondet.png"
                         alt="OnlineFondet"
-                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                        className="w-full h-full object-contain group-hover:scale-110 transition-transform duration-500 block"
                         />
-                        <div className="absolute inset-0 bg-gradient-to-t from-orange-600/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                        <Button variant="secondary" size="sm" className="gap-2 bg-white/90 hover:bg-white">
-                            <Eye className="w-4 h-4" />
-                            View Project
-                        </Button>
-                        </div>
                     </div>
                     <CardContent className="p-4">
                         <h3 className="font-semibold mb-2 group-hover:text-orange-600 transition-colors">
@@ -116,16 +94,10 @@ export const Projects = () => {
                     <Card className="group overflow-hidden hover:shadow-xl hover:shadow-purple-500/20 transition-all duration-300 hover:-translate-y-2">
                     <div className="relative aspect-[4/3] overflow-hidden">
                         <img
-                        src="/website-design-layout.jpg"
+                        src="/projects/movie_library.png"
                         alt="MovieLibrary"
-                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                        className="w-full h-full object-contain group-hover:scale-110 transition-transform duration-500"
                         />
-                        <div className="absolute inset-0 bg-gradient-to-t from-purple-600/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                        <Button variant="secondary" size="sm" className="gap-2 bg-white/90 hover:bg-white">
-                            <Eye className="w-4 h-4" />
-                            View Project
-                        </Button>
-                        </div>
                     </div>
                     <CardContent className="p-4">
                         <h3 className="font-semibold mb-2 group-hover:text-purple-600 transition-colors">
@@ -145,16 +117,10 @@ export const Projects = () => {
                     <Card className="group overflow-hidden hover:shadow-xl hover:shadow-pink-500/20 transition-all duration-300 hover:-translate-y-2">
                     <div className="relative aspect-[4/3] overflow-hidden">
                         <img
-                        src="/abstract-geometric-artwork.png"
+                        src="/projects/autobank.png"
                         alt="Autobank"
-                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                        className="w-full h-full object-contain group-hover:scale-110 transition-transform duration-500"
                         />
-                        <div className="absolute inset-0 bg-gradient-to-t from-pink-600/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                        <Button variant="secondary" size="sm" className="gap-2 bg-white/90 hover:bg-white">
-                            <Eye className="w-4 h-4" />
-                            View Project
-                        </Button>
-                        </div>
                     </div>
                     <CardContent className="p-4">
                         <h3 className="font-semibold mb-2 group-hover:text-pink-600 transition-colors">

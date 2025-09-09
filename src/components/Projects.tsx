@@ -34,6 +34,9 @@ export const Projects = () => {
                             <Badge variant="outline" className="text-xs hover:bg-pink-100 transition-colors">
                             Vite
                             </Badge>
+                            <Badge variant="outline" className="text-xs hover:bg-pink-100 transition-colors">
+                            TypeScript
+                            </Badge>
                         </div>
                         </div>
                     </CardContent>
@@ -59,6 +62,9 @@ export const Projects = () => {
                             </Badge>
                             <Badge variant="outline" className="text-xs hover:bg-purple-100 transition-colors">
                             Next.js
+                            </Badge>
+                            <Badge variant="outline" className="text-xs hover:bg-pink-100 transition-colors">
+                            TypeScript
                             </Badge>
                         </div>
                         </div>
@@ -108,6 +114,9 @@ export const Projects = () => {
                         <div className="flex gap-1">
                             <Badge variant="outline" className="text-xs hover:bg-purple-100 transition-colors">
                             Java
+                            </Badge>
+                            <Badge variant="outline" className="text-xs hover:bg-purple-100 transition-colors">
+                            JavaFX
                             </Badge>
                         </div>
                         </div>

@@ -113,7 +113,7 @@ export const Navbar = () => {
                   className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white border-0 w-fit shadow-sm"
                   style={{ background: "linear-gradient(to right, rgb(147 51 234), rgb(219 39 119))" }}
                 >
-                <a href="/CV_Adele_Strysse.pdf" target="_blank" rel="noopener noreferrer" className="text-white font-medium">
+                <a href="/CV.pdf" target="_blank" rel="noopener noreferrer" className="text-white font-medium">
                   Resume
                 </a>
                 </Button>

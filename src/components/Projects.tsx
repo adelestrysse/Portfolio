@@ -14,7 +14,7 @@ export const Projects = () => {
                     <Card className="group overflow-hidden hover:shadow-xl hover:shadow-purple-500/20 transition-all duration-300 hover:-translate-y-2">
                     <div className="relative aspect-[4/3] overflow-hidden">
                         <img
-                        src="/modern-brand-identity.png"
+                        src="/projects/portfolio.png"
                         alt="Portfolio"
                         className="w-full h-full object-contain group-hover:scale-110 transition-transform duration-500"
                         />

@@ -68,11 +68,18 @@ export function MainContent() {
             </CardTitle>
             </CardHeader>
             <CardContent>
-            <p className="text-muted-foreground leading-relaxed text-pretty">
+            <p className="text-muted-foreground leading-relaxed text-pretty mb-8">
                 I started my studies in Computer Science after being inspired to continue my technological
-                journey from VGS. 
-                <br />
-                
+                journey from VGS. I wanted to explore programming a bit further than just my studies, so, I decided to join
+                a committee dedicated to programming of applications.                 
+            </p>
+            <p className="text-muted-foreground leading-relaxed text-pretty mb-8">
+              I’ve gained a lot of experience through my studies and by working alongside my fellow committee members. 
+              I have improved my programming skills and also learned just how important teamwork is when it comes to developing a product.
+            </p>
+            <p className="text-muted-foreground leading-relaxed text-pretty">
+              I'm excited for the journey ahead and am highly motivated, hardworking, and eager to keep learning!
+              I enjoy collaborating with others and thrive in social, team-oriented environments, always ready to contribute my best!
             </p>
             </CardContent>
         </Card>
@@ -88,10 +95,9 @@ export function MainContent() {
             </CardHeader>
             <CardContent>
             <p className="text-muted-foreground leading-relaxed text-pretty">
-                I started my studies in Computer Science after being inspired to continue my technological
-                journey from VGS. 
-                <br />
-                
+              In January 2025 to May 2025, I worked as a Learning Assistent for the subject "Menneske-Maskin-Interaksjon"(Human-Computer Interaction). In this role, 
+              I provided feedback on assignments and graded reports to help students improve their work. I also guided students through each task, 
+              ensuring they gained a solid understanding of the course material.
             </p>
             </CardContent>
         </Card>
@@ -120,6 +126,7 @@ export function MainContent() {
                     <Badge variant="secondary">Git</Badge>
                     <Badge variant="secondary">GitHub</Badge>
                     <Badge variant="secondary">Firebase</Badge>
+                    <Badge variant="secondary">Maven</Badge>
                   </div>
                 </div>
                 <div>
@@ -128,6 +135,8 @@ export function MainContent() {
                     <Badge variant="secondary">React</Badge>
                     <Badge variant="secondary">Vite</Badge>
                     <Badge variant="secondary">Tailwind</Badge>
+                    <Badge variant="secondary">SQLite3</Badge>
+                    <Badge variant="secondary">JavaFX</Badge>
                   </div>
                 </div>
                 <div>

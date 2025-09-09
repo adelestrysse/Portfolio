@@ -27,7 +27,7 @@ export const ThemeToggle = () => {
   };
 
   return (
-    <button onClick={toggleTheme}>
+    <button onClick={toggleTheme} className='cursor-pointer'>
       {" "}
       {isDarkMode ? (
         <Sun />

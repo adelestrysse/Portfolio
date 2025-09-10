@@ -1,5 +1,7 @@
 import { Card, CardContent } from "./ui/card"
 import { Badge } from "./ui/badge"
+import { Button } from "./ui/button"
+import { Eye } from "lucide-react"
 
 export const Projects = () => {
     return (
@@ -18,6 +20,12 @@ export const Projects = () => {
                         alt="Portfolio"
                         className="w-full h-full object-contain group-hover:scale-110 transition-transform duration-500"
                         />
+                        <div className="absolute inset-0 bg-gradient-to-t from-purple-400/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                        <Button variant="secondary" size="sm" className="gap-2 bg-white/90 hover:bg-white cursor-pointer" onClick={() => window.open("https://github.com/adelestrysse/Portfolio", "_blank")}>
+                            <Eye className="w-4 h-4" />
+                            View Project
+                        </Button>
+                        </div>
                     </div>
                     <CardContent className="p-4">
                         <h3 className="font-semibold mb-2 group-hover:text-purple-600 transition-colors">
@@ -31,10 +39,10 @@ export const Projects = () => {
                             <Badge variant="outline" className="text-xs hover:bg-purple-100 transition-colors">
                             React
                             </Badge>
-                            <Badge variant="outline" className="text-xs hover:bg-pink-100 transition-colors">
+                            <Badge variant="outline" className="text-xs hover:bg-purple-100 transition-colors">
                             Vite
                             </Badge>
-                            <Badge variant="outline" className="text-xs hover:bg-pink-100 transition-colors">
+                            <Badge variant="outline" className="text-xs hover:bg-purple-100 transition-colors">
                             TypeScript
                             </Badge>
                         </div>
@@ -49,6 +57,12 @@ export const Projects = () => {
                         alt="AppEvent"
                         className="w-full h-full object-contain group-hover:scale-110 transition-transform duration-500"
                         />
+                        <div className="absolute inset-0 bg-gradient-to-t from-pink-400/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                        <Button variant="secondary" size="sm" className="gap-2 bg-white/90 hover:bg-white cursor-pointer" onClick={() => window.open("https://github.com/adelestrysse/AppEvent", "_blank")}>
+                            <Eye className="w-4 h-4" />
+                            View Project
+                        </Button>
+                        </div>
                     </div>
                     <CardContent className="p-4">
                         <h3 className="font-semibold mb-2 group-hover:text-pink-600 transition-colors">
@@ -60,7 +74,7 @@ export const Projects = () => {
                             <Badge variant="outline" className="text-xs hover:bg-pink-100 transition-colors">
                             React
                             </Badge>
-                            <Badge variant="outline" className="text-xs hover:bg-purple-100 transition-colors">
+                            <Badge variant="outline" className="text-xs hover:bg-pink-100 transition-colors">
                             Next.js
                             </Badge>
                             <Badge variant="outline" className="text-xs hover:bg-pink-100 transition-colors">
@@ -71,25 +85,31 @@ export const Projects = () => {
                     </CardContent>
                     </Card>
 
-                    <Card className="group overflow-hidden hover:shadow-xl hover:shadow-orange-500/20 transition-all duration-300 hover:-translate-y-2">
+                    <Card className="group overflow-hidden hover:shadow-xl hover:shadow-indigo-600/20 transition-all duration-300 hover:-translate-y-2">
                     <div className="relative aspect-[4/3] overflow-hidden">
                         <img
                         src="/projects/onlinefondet.png"
                         alt="OnlineFondet"
                         className="w-full h-full object-contain group-hover:scale-110 transition-transform duration-500 block"
                         />
+                        <div className="absolute inset-0 bg-gradient-to-t from-indigo-400/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                        <Button variant="secondary" size="sm" className="gap-2 bg-white/90 hover:bg-white cursor-pointer" onClick={() => window.open("https://github.com/appKom/penne", "_blank")}>
+                            <Eye className="w-4 h-4" />
+                            View Project
+                        </Button>
+                        </div>
                     </div>
                     <CardContent className="p-4">
-                        <h3 className="font-semibold mb-2 group-hover:text-orange-600 transition-colors">
+                        <h3 className="font-semibold mb-2 group-hover:text-indigo-600 transition-colors">
                         OnlineFondet (penne)
                         </h3>
                         <p className="text-sm text-muted-foreground mb-3">A website for "Online Linjeforening"'s fund</p>
                         <div className="flex items-center justify-between">
                         <div className="flex gap-1">
-                            <Badge variant="outline" className="text-xs hover:bg-orange-100 transition-colors">
+                            <Badge variant="outline" className="text-xs hover:bg-indigo-50 transition-colors">
                             React
                             </Badge>
-                            <Badge variant="outline" className="text-xs hover:bg-yellow-100 transition-colors">
+                            <Badge variant="outline" className="text-xs hover:bg-indigo-50 transition-colors">
                             TypeScript
                             </Badge>
                         </div>
@@ -97,25 +117,31 @@ export const Projects = () => {
                     </CardContent>
                     </Card>
 
-                    <Card className="group overflow-hidden hover:shadow-xl hover:shadow-purple-500/20 transition-all duration-300 hover:-translate-y-2">
+                    <Card className="group overflow-hidden hover:shadow-xl hover:shadow-teal-500/20 transition-all duration-300 hover:-translate-y-2">
                     <div className="relative aspect-[4/3] overflow-hidden">
                         <img
                         src="/projects/movie_library.png"
                         alt="MovieLibrary"
                         className="w-full h-full object-contain group-hover:scale-110 transition-transform duration-500"
                         />
+                        <div className="absolute inset-0 bg-gradient-to-t from-teal-400/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                        <Button variant="secondary" size="sm" className="gap-2 bg-white/90 hover:bg-white cursor-pointer" onClick={() => window.open("https://github.com/adelestrysse/MovieLibrary", "_blank")}>
+                            <Eye className="w-4 h-4" />
+                            View Project
+                        </Button>
+                        </div>
                     </div>
                     <CardContent className="p-4">
-                        <h3 className="font-semibold mb-2 group-hover:text-purple-600 transition-colors">
+                        <h3 className="font-semibold mb-2 group-hover:text-teal-600 transition-colors">
                         MovieLibrary
                         </h3>
                         <p className="text-sm text-muted-foreground mb-3">Project from "Informatikk prosjektarbeid 1"</p>
                         <div className="flex items-center justify-between">
                         <div className="flex gap-1">
-                            <Badge variant="outline" className="text-xs hover:bg-purple-100 transition-colors">
+                            <Badge variant="outline" className="text-xs hover:bg-teal-100 transition-colors">
                             Java
                             </Badge>
-                            <Badge variant="outline" className="text-xs hover:bg-purple-100 transition-colors">
+                            <Badge variant="outline" className="text-xs hover:bg-teal-100 transition-colors">
                             JavaFX
                             </Badge>
                         </div>
@@ -130,18 +156,24 @@ export const Projects = () => {
                         alt="Autobank"
                         className="w-full h-full object-contain group-hover:scale-110 transition-transform duration-500"
                         />
+                        <div className="absolute inset-0 bg-gradient-to-t from-yellow-400/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                        <Button variant="secondary" size="sm" className="gap-2 bg-white/90 hover:bg-white cursor-pointer" onClick={() => window.open("https://github.com/appKom/gnocchi", "_blank")}>
+                            <Eye className="w-4 h-4" />
+                            View Project
+                        </Button>
+                        </div>
                     </div>
                     <CardContent className="p-4">
-                        <h3 className="font-semibold mb-2 group-hover:text-pink-600 transition-colors">
-                        Autobank
+                        <h3 className="font-semibold mb-2 group-hover:text-yellow-600 transition-colors">
+                        Autobank (gnocchi)
                         </h3>
                         <p className="text-sm text-muted-foreground mb-3">Website for economy in "Online Linjeforening"</p>
                         <div className="flex items-center justify-between">
                         <div className="flex gap-1">
-                            <Badge variant="outline" className="text-xs hover:bg-pink-100 transition-colors">
+                            <Badge variant="outline" className="text-xs hover:bg-yellow-100 transition-colors">
                             React
                             </Badge>
-                            <Badge variant="outline" className="text-xs hover:bg-purple-100 transition-colors">
+                            <Badge variant="outline" className="text-xs hover:bg-yellow-100 transition-colors">
                             TypeScript
                             </Badge>
                         </div>

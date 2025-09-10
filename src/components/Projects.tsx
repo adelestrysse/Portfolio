@@ -13,6 +13,7 @@ export const Projects = () => {
                     </span>
                 </h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <a href="https://github.com/adelestrysse/Portfolio" target="_blank" rel="noopener noreferrer">
                     <Card className="group overflow-hidden hover:shadow-xl hover:shadow-purple-500/20 transition-all duration-300 hover:-translate-y-2">
                     <div className="relative aspect-[4/3] overflow-hidden">
                         <img
@@ -49,7 +50,9 @@ export const Projects = () => {
                         </div>
                     </CardContent>
                     </Card>
+                    </a>
 
+                    <a href="https://github.com/adelestrysse/AppEvent" target="_blank" rel="noopener noreferrer">
                     <Card className="group overflow-hidden hover:shadow-xl hover:shadow-pink-500/20 transition-all duration-300 hover:-translate-y-2">
                     <div className="relative aspect-[4/3] overflow-hidden">
                         <img
@@ -84,7 +87,9 @@ export const Projects = () => {
                         </div>
                     </CardContent>
                     </Card>
+                    </a>
 
+                    <a href="https://github.com/appKom/penne" target="_blank" rel="noopener noreferrer">
                     <Card className="group overflow-hidden hover:shadow-xl hover:shadow-indigo-600/20 transition-all duration-300 hover:-translate-y-2">
                     <div className="relative aspect-[4/3] overflow-hidden">
                         <img
@@ -116,7 +121,9 @@ export const Projects = () => {
                         </div>
                     </CardContent>
                     </Card>
+                    </a>
 
+                    <a href="https://github.com/adelestrysse/MovieLibrary" target="_blank" rel="noopener noreferrer">
                     <Card className="group overflow-hidden hover:shadow-xl hover:shadow-teal-500/20 transition-all duration-300 hover:-translate-y-2">
                     <div className="relative aspect-[4/3] overflow-hidden">
                         <img
@@ -148,7 +155,9 @@ export const Projects = () => {
                         </div>
                     </CardContent>
                     </Card>
+                    </a>
 
+                    <a href="https://github.com/appKom/gnocchi" target="_blank" rel="noopener noreferrer">
                     <Card className="group overflow-hidden hover:shadow-xl hover:shadow-pink-500/20 transition-all duration-300 hover:-translate-y-2">
                     <div className="relative aspect-[4/3] overflow-hidden">
                         <img
@@ -180,6 +189,7 @@ export const Projects = () => {
                         </div>
                     </CardContent>
                     </Card>
+                    </a>
                 </div>
                 </section>
         </div>

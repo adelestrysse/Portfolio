@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&display=swap");
+@import "tailwindcss";
+
+:root {
+  --color-background: #211b38;
+  --color-second-background: #6f5a8e;
+  --color-primary-accent: #b79ae8;
+  --color-navbar: #161226;
+  --color-highlight: #f6d77a;
+  --color-flower: #d98fa9;
+  --color-text: #f7f1e3;
+  --color-muted-text: #bdb5cb;
+  --color-magical-glow: #ffe8a3;
+}
+
+@theme {
+  --color-background: #211b38;
+  --color-second-background: #6f5a8e;
+  --color-navbar: #161226;
+  --color-primary-accent: #b79ae8;
+  --color-highlight: #f6d77a;
+  --color-flower: #d98fa9;
+  --color-text: #f7f1e3;
+  --color-muted-text: #bdb5cb;
+  --color-magical-glow: #ffe8a3;
+
+  --font-beyond: "BeyondWonderland", cursive;
+  --font-starlight: "StarlightRune", cursove;
+  --font-cormorant: "Cormorant Garamond", serif;
+}
+
+@font-face {
+  font-family: "BeyondWonderland";
+  src: url("./assets/Beyond\ Wonderland.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "StarlightRune";
+  src: url("./assets/StarlightRune-Personal\ Use.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-text);
+  font-family: var(--font-cormorant);
+}
+
+@keyframes orbit-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.orbit-ring {
+  animation: orbit-spin 4s linear infinite;
+}

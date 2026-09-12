@@ -26,7 +26,7 @@ export default function () {
             GitHub
           </a>
           <a
-            href="../../public/CV Adele Xiao Yuan Strysse.pdf"
+            href="/public/CV Adele Xiao Yuan Strysse.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-second-background p-2 rounded-lg hover:bg-primary-accent shadow-magical-glow shadow-md transition duration-300"
@@ -45,7 +45,7 @@ export default function () {
           }}
         />
         <img
-          src="../../public/profile_pic.jpg"
+          src="/public/profile_pic.jpg"
           className="absolute inset-1 w-[calc(100%-0.5rem)] h-[calc(100%-0.5rem)] rounded-full object-cover"
         />
       </div>

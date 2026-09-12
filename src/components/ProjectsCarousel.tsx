@@ -12,31 +12,31 @@ const projects: Project[] = [
   {
     title: "Portfolio",
     description: "Personal site built with React and Tailwind.",
-    imageSrc: "../../public/projects/portfolio.png",
+    imageSrc: "/public/projects/portfolio.png",
     link: "https://github.com/adelestrysse/Portfolio",
   },
   {
     title: "AppEvent",
     description: "Project from 'Software Engineering'",
-    imageSrc: "../../public/projects/appevent.png",
+    imageSrc: "/public/projects/appevent.png",
     link: "https://github.com/adelestrysse/AppEvent",
   },
   {
     title: "Autobank",
     description: "Receipt application built with fellow committee members.",
-    imageSrc: "../../public/projects/autobank.png",
+    imageSrc: "/public/projects/autobank.png",
     link: "https://github.com/appKom/Autobank-frontend",
   },
   {
     title: "OnlineFondet",
     description: "Fund application built with fellow committee members.",
-    imageSrc: "../../public/projects/onlinefondet.png",
+    imageSrc: "/public/projects/onlinefondet.png",
     link: "https://github.com/appKom/penne",
   },
   {
     title: "MovieLibrary",
     description: "Project from 'Informatics Project 1'",
-    imageSrc: "../../public/projects/movie_library.png",
+    imageSrc: "/public/projects/movie_library.png",
     link: "https://github.com/adelestrysse/MovieLibrary",
   },
 ];

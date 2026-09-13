@@ -14,6 +14,7 @@ const skillCategories: SkillCategory[] = [
       "SQL",
       "HTML",
       "CSS",
+      "Kotlin",
     ],
   },
   {
@@ -35,9 +36,10 @@ const skillCategories: SkillCategory[] = [
       "Docker",
       "Figma",
       "Postman",
-      "VS Code",
+      "Visual Studio Code",
       "Maven",
       "Firebase",
+      "IntelliJ IDEA",
     ],
   },
 ];

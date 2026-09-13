@@ -1,3 +1,5 @@
+import { LuMail, LuMapPin } from "react-icons/lu";
+
 export default function () {
   return (
     <main className="flex flex-col-reverse md:flex-row items-center justify-between gap-12 p-10 w-full max-w-5xl mx-auto">
@@ -34,6 +36,16 @@ export default function () {
             Resume
           </a>
         </span>
+        <div className="flex flex-wrap items-center gap-8 mt-2">
+          <div className="flex items-center gap-2">
+            <LuMail className="text-xl" />
+            <p>adelestrysse@gmail.com</p>
+          </div>
+          <div className="flex items-center gap-2">
+            <LuMapPin className="text-xl" />
+            <p>Veggli & Trondheim</p>
+          </div>
+        </div>
       </section>
       <div className="relative w-75 h-75 shrink-0">
         <div
